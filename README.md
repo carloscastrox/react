@@ -197,45 +197,4 @@ jobs:
 
 ***
 
-## 🧪 Calidad (ESLint)
-
-*   Configura ESLint según tu gusto (reglas recomendadas de React/TypeScript si aplica).
-*   Ejecuta `npm run lint` en CI si quieres romper el build cuando haya errores.
-
-***
-
-## 🔐 Variables de entorno
-
-*   Crea un archivo `.env` (no lo subas) y usa `import.meta.env.VITE_*` para exponer variables en cliente.
-*   Ejemplo: `VITE_API_URL=https://api.ejemplo.com`.
-
-***
-
-## 🛠️ Solución de problemas
-
-*   **Rutas rotas en Pages**  
-    Asegúrate de definir `base: '/<repo>/'` en `vite.config.js`. Sin eso, los assets se resolverán a `/` y fallarán en un subpath. [\[vite.dev\]](https://vite.dev/guide/static-deploy)
-
-*   **El workflow publica pero no se ve la web**  
-    Verifica en **Settings → Pages** que el entorno está apuntando al último deploy, y revisa la pestaña **Actions** por errores de permisos (*Pages: write*). [\[vite.dev\]](https://vite.dev/guide/static-deploy)
-
-*   **Advertencias de seguridad en dependencias (p. ej. `minimatch`)**  
-    Si aparecen vulnerabilidades en paquetes usados solo en desarrollo (como ESLint), pueden no afectar al build ni a producción. Mantén dependencias actualizadas y revisa si existe *fix*; si no, espera actualización del ecosistema. (Mensaje informativo basado en las prácticas generales; revisa `npm audit` y changelogs pertinentes).
-
-***
-
 ## 📄 Licencia
-
-LICENSE
-
-```
-
----
-
-### ¿Lo integro por ti?
-Si me confirmas el nombre exacto del repo (¿es `carloscastrox/react` o `carloscastrox/t2_react`?) o me compartes tu `package.json`, dejo el `README.md` totalmente alineado con tu proyecto, incluyendo **sección de features reales**, **capturas** y **badges** de CI.  
-
-También puedo generar el *commit* sugerido (mensaje: `docs: add README with Vite + Pages CI`) y el **workflow** de despliegue.
-
-**Fuentes**: Guía oficial de Vite para *static deploy* (incluye configuración `base` para GitHub Pages y uso de Actions) . Verificación de tu perfil/repos públicos (no aparece un repo `react` público al momento de revisar) .
-```
