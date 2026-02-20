@@ -48,7 +48,7 @@ Contributions are welcome! If you have any ideas or bug fixes, please submit a p
 This project is licensed under the MIT License.
 
 ## 📬 Contact
-For any questions or concerns, please contact us at [support@example.com](mailto:support@example.com).
+For any questions or concerns, please contact us at [cacjx84@gmail.com](mailto:cacjx84@gmail.com).
 
 ## 💖 Thanks Message
 Thank you for considering this project! We hope it helps you build amazing web applications.
